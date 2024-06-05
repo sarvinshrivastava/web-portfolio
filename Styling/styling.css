@@ -96,21 +96,23 @@ body {
       font-weight: 900;
       text-align: center;
 
-      padding: 0px 0px 0px 90px;
+      padding: 0px 0vh 0px 15vh;
 }
 
 .myphoto>div>img {
-      width: 30rem;
+      width: 42rem;
       height: auto;
       /* margin: 20px 20px; */
-      padding: 0px 20px 0px 0px;
+      padding: 0px 0vh 0px 27vh;
 }
 
 .myphoto {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      padding-top: 25vh;
+      padding-top: 20vh;
+      height: 100vh;
+
 }
 
 .intro {
