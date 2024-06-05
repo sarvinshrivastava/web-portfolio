@@ -1,0 +1,248 @@
+nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80vw;
+      height: 15vh;
+      background: #7D4F50;
+      padding: 1vw 5vw;
+      gap: 2rem;
+      border-radius: 1rem;
+      position: absolute;
+      top: 5vh;
+
+}
+
+nav>img {
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+}
+
+nav>div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      background-color: inherit;
+
+}
+
+nav>div>a {
+      font-size: 1rem;
+      background-color: inherit;
+      color: white;
+}
+
+.flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.flex-col {
+      flex-direction: column;
+}
+
+header {
+      /* max-width: 1150px; */
+      margin: 0 auto;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+}
+
+body {
+      overflow-x: hidden;
+      width: 100vw;
+      /* height: auto; */
+}
+
+.header-align-img {
+      display: flex;
+      flex-direction: row;
+      margin: 5px;
+}
+
+.header-align-cont {
+      background-color: #7D4F50;
+      margin-right: 20px;
+      padding-right: 2rem;
+}
+
+.nav {
+      font-size: 1.12rem;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-image {
+      width: 40px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+}
+
+.links {
+      font-family: Calibri;
+      font-size: medium;
+      /*color: black;*/
+      text-decoration: none;
+}
+
+.myphoto>div>h1 {
+      font-family: 'Tsukimi Rounded', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 900;
+      text-align: center;
+
+      padding: 0px 0px 0px 90px;
+}
+
+.myphoto>div>img {
+      width: 30rem;
+      height: auto;
+      /* margin: 20px 20px; */
+      padding: 0px 20px 0px 0px;
+}
+
+.myphoto {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 25vh;
+}
+
+.intro {
+      color: #F9EAE1;
+      background-color: #7D4F50;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+}
+
+.intro-heading {
+      /* padding-top: 10px; */
+      text-align: center;
+      font-family: 'Shantell Sans', cursive;
+      font-family: 'Tsukimi Rounded', sans-serif;
+      font-size: x-large;
+      color: #F9EAE1;
+      background-color: #7D4F50;
+}
+
+.intro-content {
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 0;
+      text-align: center;
+      /* padding-bottom: 65px; */
+      color: #F9EAE1;
+      background-color: #7D4F50;
+}
+
+.tech {
+      width: 225px;
+      height: 225px;
+      margin: 20px 20px;
+      padding: 15px;
+      box-shadow: 0 0 20px rgba(240, 139, 134, 0.5);
+      text-align: center;
+      border-radius: 9%;
+      gap: 1rem;
+}
+
+.tech-image {
+      width: 45px;
+      height: auto;
+      margin: 0px auto;
+}
+
+.tech-align-img {
+      display: flex;
+      flex-direction: row;
+}
+
+.grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+      /* 2 columns for 2 rows */
+      gap: 20px;
+      /* Gap between images */
+      /* max-width: 460px; */
+      /* Adjust the maximum width as needed */
+      margin: auto 300px;
+      /* Center the grid horizontally */
+      /*padding: 12px; /* Add padding for spacing */
+}
+
+.tech-head {
+      font-family: 'Tilt Neon', cursive;
+      font-size: large;
+      /*color: black;*/
+}
+
+.tech-cont {
+      font-family: 'Edu SA Beginner', cursive;
+      /*color: black;*/
+}
+
+.footer-text {
+      font-family: Calibri;
+      font-size: large;
+      text-align: center;
+}
+
+.footer-image {
+      width: 35px;
+      height: auto;
+      display: block;
+      margin: 10px 10px;
+}
+
+* {
+      background-color: #F9EAE1;
+      color: #7D4F50;
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serifd;
+}
+
+/* Media Querie for smart-phone display */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+      .myphoto {
+            flex-direction: column;
+            width: 100vw;
+            justify-content: center;
+      }
+
+      .myphoto>div>h1 {
+            font-size: 4rem;
+
+      }
+
+      .heading-text {
+            font-size: 2.5rem;
+      }
+
+      .self {
+            width: 80vw;
+      }
+
+      nav>div>a {
+            font-size: 2rem;
+      }
+
+      .intro-content {
+            max-width: none;
+            padding: 0 1.5rem;
+      }
+}
