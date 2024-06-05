@@ -23,15 +23,16 @@ nav>div {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 5rem;
+      gap: 1.4rem;
       background-color: inherit;
-
+      width: 20rem;
 }
 
 nav>div>a {
       font-size: 1rem;
       background-color: inherit;
       color: white;
+      text-decoration: none;
 }
 
 .flex {
@@ -45,7 +46,6 @@ nav>div>a {
 }
 
 header {
-      /* max-width: 1150px; */
       margin: 0 auto;
       padding: 10px;
       display: flex;
@@ -55,19 +55,6 @@ header {
 body {
       overflow-x: hidden;
       width: 100vw;
-      /* height: auto; */
-}
-
-.header-align-img {
-      display: flex;
-      flex-direction: row;
-      margin: 5px;
-}
-
-.header-align-cont {
-      background-color: #7D4F50;
-      margin-right: 20px;
-      padding-right: 2rem;
 }
 
 .nav {
@@ -76,55 +63,39 @@ body {
       font-family: Arial, Helvetica, sans-serif;
 }
 
-.header-image {
-      width: 40px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-}
-
-.links {
-      font-family: Calibri;
-      font-size: medium;
-      /*color: black;*/
-      text-decoration: none;
-}
 
 .myphoto>div>h1 {
       font-family: 'Tsukimi Rounded', sans-serif;
       font-size: 2.5rem;
       font-weight: 900;
-      text-align: center;
+      text-align: left;
+      padding: 0px 0vh 0px 0vh;
+}
 
-      padding: 0px 0vh 0px 15vh;
+.myphoto>div>h2 {
+      font-family: 'Tsukimi Rounded', sans-serif;
+      text-align: left;
+      padding: 0px 0vh 0px 5vh;
 }
 
 .myphoto>div>img {
       width: 42rem;
       height: auto;
-      /* margin: 20px 20px; */
-      padding: 0px 0vh 0px 27vh;
+      padding: 0px 0vh 0px 35vh;
 }
 
 .myphoto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       padding-top: 20vh;
       height: 100vh;
-
 }
 
 .intro {
       color: #F9EAE1;
       background-color: #7D4F50;
       padding: 40px 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       text-align: center;
       gap: 1.5rem;
+      height: 100vh;
 }
 
 .intro-heading {
@@ -174,7 +145,7 @@ body {
 .grid {
       display: grid;
 
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       /* 2 columns for 2 rows */
       gap: 20px;
       /* Gap between images */
