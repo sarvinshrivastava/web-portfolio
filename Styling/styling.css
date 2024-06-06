@@ -1,3 +1,18 @@
+.flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.flex-col {
+      flex-direction: column;
+}
+
+body {
+      overflow-x: hidden;
+      width: 100vw;
+}
+
 nav {
       display: flex;
       justify-content: space-between;
@@ -10,7 +25,6 @@ nav {
       border-radius: 1rem;
       position: absolute;
       top: 5vh;
-
 }
 
 nav>img {
@@ -20,9 +34,6 @@ nav>img {
 }
 
 nav>div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       gap: 1.4rem;
       background-color: inherit;
       width: 20rem;
@@ -33,49 +44,21 @@ nav>div>a {
       background-color: inherit;
       color: white;
       text-decoration: none;
-}
-
-.flex {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-}
-
-.flex-col {
-      flex-direction: column;
-}
-
-header {
-      margin: 0 auto;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-}
-
-body {
-      overflow-x: hidden;
-      width: 100vw;
-}
-
-.nav {
-      font-size: 1.12rem;
-      text-decoration: none;
       font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .myphoto>div>h1 {
       font-family: 'Tsukimi Rounded', sans-serif;
       font-size: 2.5rem;
-      font-weight: 900;
+      /* font-weight: 900; */
       text-align: left;
-      padding: 0px 0vh 0px 0vh;
+      /* padding: 0px 0vh 0px 0vh; */
 }
 
 .myphoto>div>h2 {
       font-family: 'Tsukimi Rounded', sans-serif;
       text-align: left;
-      padding: 0px 0vh 0px 5vh;
+      padding: 0px 0vh 0px 10vh;
 }
 
 .myphoto>div>img {
@@ -187,6 +170,14 @@ body {
       margin: 0%;
       box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serifd;
+}
+
+.projects {
+      height: 100vh;
+}
+
+.achievements {
+      height: 88vh;
 }
 
 /* Media Querie for smart-phone display */
