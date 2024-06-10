@@ -13,7 +13,7 @@ body {
       width: 100vw;
 }
 
-nav {
+.topnav {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -27,19 +27,19 @@ nav {
       top: 5vh;
 }
 
-nav>img {
+.topnav>img {
       border-radius: 50%;
       height: 80px;
       width: 80px;
 }
 
-nav>div {
+.topnav>div {
       gap: 1.4rem;
       background-color: inherit;
       width: 20rem;
 }
 
-nav>div>a {
+.topnav>div>a {
       font-size: 1rem;
       background-color: inherit;
       color: white;
@@ -223,4 +223,59 @@ footer>div>a>img, footer>div>img {
             max-width: none;
             padding: 0 1.5rem;
       }
+      .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+            width:100vw;
+            height: 200px;
+          }
+          
+          /* Hide the links inside the navigation menu (except for logo/home) */
+          .topnav #myLinks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          
+          /* Style navigation menu links */
+          .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+          }
+          
+          /* Style the hamburger menu */
+          .topnav a.icon {
+            display: flex;
+            justify-content:center;
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          
+          /* Add a grey background color on mouse-over */
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          /* Style the active link (or home/logo) */
+          .active {
+            background-color: #04AA6D;
+            color: white;
+          }
+
+
+}
+
+
+#logo{
+      height: 12px;
+      width: 12px;
 }

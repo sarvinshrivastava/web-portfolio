@@ -19,3 +19,13 @@ document.getElementById("contact-copy-button").addEventListener("click", functio
     document.body.removeChild(textArea);
     alert("Contact has been copied!");
 });
+
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
