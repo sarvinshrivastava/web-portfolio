@@ -1,281 +1,274 @@
 .flex {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-col {
-      flex-direction: column;
+  flex-direction: column;
 }
 
 body {
-      overflow-x: hidden;
-      width: 100vw;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .topnav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 80vw;
-      height: 15vh;
-      background: #7D4F50;
-      padding: 1vw 5vw;
-      gap: 2rem;
-      border-radius: 1rem;
-      position: absolute;
-      top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  height: 15vh;
+  background: #7d4f50;
+  padding: 1vw 5vw;
+  gap: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 5vh;
 }
 
-.topnav>img {
-      border-radius: 50%;
-      height: 80px;
-      width: 80px;
+.topnav > img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
 }
 
-.topnav>div {
-      gap: 1.4rem;
-      background-color: inherit;
-      width: 20rem;
+.topnav > div {
+  gap: 1.4rem;
+  background-color: inherit;
+  width: 20rem;
 }
 
-.topnav>div>a {
-      font-size: 1rem;
-      background-color: inherit;
-      color: white;
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
+.topnav > div > a {
+  font-size: 1rem;
+  background-color: inherit;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .home {
-      padding-top: 20vh;
-      height: 100vh;
+  padding-top: 20vh;
+  height: 100vh;
 }
 
-.home>div>h1 {
-      font-family: 'Tsukimi Rounded', sans-serif;
-      font-size: 2.5rem;
-      padding-right: 49vh;
+.home > div > h1 {
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-size: 2.5rem;
+  padding-right: 49vh;
 }
 
-.home>div>h2 {
-      font-family: 'Tsukimi Rounded', sans-serif;
-      text-align: left;
-      padding: 0px 0vh 0px 10vh;
+.home > div > h2 {
+  font-family: "Tsukimi Rounded", sans-serif;
+  text-align: left;
+  padding: 0px 0vh 0px 10vh;
 }
 
-.home>div>img {
-      width: 42rem;
-      height: auto;
-      padding: 0px 0vh 0px 35vh;
+.home > div > img {
+  width: 42rem;
+  height: auto;
+  padding: 0px 0vh 0px 35vh;
 }
 
 .intro {
-      color: #F9EAE1;
-      background-color: #7D4F50;
-      padding: 0px;
-      text-align: center;
-      gap: 1.5rem;
-      height: 100vh;
+  color: #f9eae1;
+  background-color: #7d4f50;
+  padding: 0px;
+  text-align: center;
+  gap: 1.5rem;
+  height: 100vh;
 }
 
-.intro>h3 {
-      text-align: center;
-      font-family: 'Tsukimi Rounded', sans-serif;
-      font-size: 1.65rem;
-      color: #F9EAE1;
-      background-color: #7D4F50;
+.intro > h3 {
+  text-align: center;
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-size: 1.65rem;
+  color: #f9eae1;
+  background-color: #7d4f50;
 }
 
-.intro>p {
-      max-width: 700px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.1rem;
-      text-align: center;
-      color: #F9EAE1;
-      background-color: #7D4F50;
+.intro > p {
+  max-width: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #f9eae1;
+  background-color: #7d4f50;
 }
 
-.intro>div {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      /* margin: auto 300px; */
-      background-color: inherit;
+.intro > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* margin: auto 300px; */
+  background-color: inherit;
 }
 
-.tech {     /* Card template */
-      width: 225px;
-      height: 225px;
-      margin: 20px 20px;
-      padding: 15px;
-      box-shadow: 0 0 20px rgba(240, 139, 134, 0.5);
-      text-align: center;
-      border-radius: 9%;
-      gap: 1rem;
-      justify-content: evenly;
+.tech {
+  /* Card template */
+  width: 225px;
+  height: 225px;
+  margin: 20px 20px;
+  padding: 15px;
+  box-shadow: 0 0 20px rgba(240, 139, 134, 0.5);
+  text-align: center;
+  border-radius: 9%;
+  gap: 1rem;
+  justify-content: evenly;
 }
 
-.tech>h6 {
-      font-family: 'Tilt Neon', cursive;
-      font-size: large;
+.tech > h6 {
+  font-family: "Tilt Neon", cursive;
+  font-size: large;
 }
 
-.tech>p {
-      font-family: 'Edu SA Beginner', cursive;
+.tech > p {
+  font-family: "Edu SA Beginner", cursive;
 }
 
-.tech>div>a>img {
-      width: 45px;
-      height: auto;
-      margin: 0px auto;
+.tech > div > a > img {
+  width: 45px;
+  height: auto;
+  margin: 0px auto;
 }
 
 .projects {
-      height: 88vh;
-      background-color: #F9EAE1;
-      color: #7D4F50;
+  height: 88vh;
+  background-color: #f9eae1;
+  color: #7d4f50;
 }
 
-.projects>p, .projects>h2 {
-      background-color: inherit;
-      color: inherit;
+.projects > p,
+.projects > h2 {
+  background-color: inherit;
+  color: inherit;
 }
 
-.projects>h2 {
-      font-family: 'Tsukimi Rounded', sans-serif;
-      font-size: 1.65rem;
+.projects > h2 {
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-size: 1.65rem;
 }
 
 .achievements {
-      height: 90vh;
-      background-color: #7D4F50;
-      color: #F9EAE1;
+  height: 90vh;
+  background-color: #7d4f50;
+  color: #f9eae1;
 }
 
-.achievements>p, .achievements>h2 {
-      background-color: inherit;
-      color: inherit;
+.achievements > p,
+.achievements > h2 {
+  background-color: inherit;
+  color: inherit;
 }
 
-.achievements>h2 {
-      font-family: 'Tsukimi Rounded', sans-serif;
-      font-size: 1.65rem;
+.achievements > h2 {
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-size: 1.65rem;
 }
 
 footer {
-      background-color: #7D4F50;
+  background-color: #7d4f50;
 }
 
-footer>p {
-      font-family: Calibri;
-      font-size: 1.3rem;
-      text-align: center;
-      background-color: inherit;
-      color: #F9EAE1;
+footer > p {
+  font-family: Calibri;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: inherit;
+  color: #f9eae1;
 }
 
-footer>div, footer>div>a {
-      background-color: inherit;
+footer > div,
+footer > div > a {
+  background-color: inherit;
 }
 
-footer>div>a>img, footer>div>img {
-      width: 30px;
-      height: auto;
-      display: block;
-      margin: 10px 10px;
-      background-color: inherit;
+footer > div > a > img,
+footer > div > img {
+  width: 30px;
+  height: auto;
+  display: block;
+  margin: 10px 10px;
+  background-color: inherit;
 }
 
 * {
-      background-color: #F9EAE1;
-      color: #7D4F50;
-      /* padding: 0%; */
-      margin: 0%;
-      box-sizing: border-box;
-      /* font-family: Arial, Helvetica, sans-serifd; */
+  background-color: #f9eae1;
+  color: #7d4f50;
+  /* padding: 0%; */
+  margin: 0%;
+  box-sizing: border-box;
+  /* font-family: Arial, Helvetica, sans-serifd; */
 }
 
 /* Media Querie for smart-phone display */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-      .home {
-            flex-direction: column;
-            width: 100vw;
-            justify-content: center;
-      }
+  .home {
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+  }
 
-      .home>div>h1 {
-            font-size: 4rem;
-      }
+  .home > div > h1 {
+    font-size: 4rem;
+  }
 
-      .heading-text {
-            font-size: 2.5rem;
-      }
+  .heading-text {
+    font-size: 2.5rem;
+  }
 
-      .self {
-            width: 80vw;
-      }
+  .self {
+    width: 80vw;
+  }
 
-      nav>div>a {
-            font-size: 2rem;
-      }
+  nav > div > a {
+    font-size: 2rem;
+  }
 
-      .intro-content {
-            max-width: none;
-            padding: 0 1.5rem;
-      }
-      .topnav {
-            overflow: hidden;
-            background-color: #333;
-            position: relative;
-            width:100vw;
-            height: 200px;
-          }
-          
-          /* Hide the links inside the navigation menu (except for logo/home) */
-          .topnav #myLinks {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-          
-          /* Style navigation menu links */
-          .topnav a {
-            color: white;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            display: block;
-          }
-          
-          /* Style the hamburger menu */
-          .topnav a.icon {
-            display: flex;
-            justify-content:center;
-            background: black;
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
-          
-          /* Add a grey background color on mouse-over */
-          .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-          }
-          
-          /* Style the active link (or home/logo) */
-          .active {
-            background-color: #04AA6D;
-            color: white;
-          }
-
-
+  .intro-content {
+    max-width: none;
+    padding: 0 1.5rem;
+  }
+}
+/* Style the navigation links */
+.topnav #myLinks {
+  display: none;
+  position: relative;
+  margin-top: 300px;
+  
+  background-color: #333;
 }
 
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  margin-right: 20px;
 
-#logo{
-      height: 12px;
-      width: 12px;
+  /* margin: 30px; */
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  /* margin: 30px; */
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
 }
