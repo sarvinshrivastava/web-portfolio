@@ -2,71 +2,89 @@
 <html lang="en">
 
 <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Sarvin Shrivastava</title>
-
-      <link rel="stylesheet" href="Styling/styling.css">
-
 
       <!-- Imports -->
       <style>
-            @import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@700&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,500&family=Tsukimi+Rounded:wght@700&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Slackside+One&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Tiro+Devanagari+Hindi&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+            @import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@700&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,500&family=Tsukimi+Rounded:wght@700&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Slackside+One&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Tiro+Devanagari+Hindi&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap");
       </style>
 
-      <!--Scripts-->
+      <!-- Styles -->
+      <link rel="stylesheet" href="/Styling/output.css">
+
+      <!-- Favicon -->
+       <link rel="shortcut icon" href="/Images/favico.ico" type="image/x-icon">
+
+      <!-- Scripts -->
       <script src="Scripts/script.js" defer></script>
+      <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
-<body>
-      <!-- <div class="yourdiv">
-            <div class="topnav">
-                  <img src="Images/avatar-anime1.png" alt="nav bar image">
-                  <div id="myLinks">
-                        <a href="#news">News</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#about">About</a>
-                  </div>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                  </a>
+<body class="bg-black h-screen overflow-hidden max-w-screen-4xl">
+      <!-- nav starts -->
+      <nav class="flex justify-between items-center bg-white rounded-lg p-1 md:p-2 mt-16 mx-auto w-9/12 md:w-3/4">
+            <div>
+                  <img class="h-14 md:h-20 w-auto rounded-full" src="Images/avatar-anime1.png" alt="nav bar image" />
             </div>
-      </div> -->
-      <div style="display: flex; justify-content: center;">
-            <nav class="topnav">
-                  <img src="Images/avatar-anime1.png" alt="nav bar image">
-                  <div class="flex">
-                        <a href="#scrolltohome">Home</a>
-                        <!-- <a href="Blogs/blog-home.html">Blog</a> -->
-                        <a href="#scrolltointro">Intro</a>
-                        <a href="#scrolltoproj">Projects</a>
-                        <a href="#scrolltoachieve">Achievements</a>
-                        <a href="Resume/Resume_Sarvin-Shrivastava.pdf">Resume</a>
-                  </div>
-            </nav>
-      </div>      
+            <div class="ml-4 hidden md:block">
+                  <ul class="flex space-x-4">
+                        <li><a href="scrolltohome">Home</a></li>
+                        <li><a href="scrolltointro">Intro</a></li>
+                        <li><a href="scrolltoproj">Projects</a></li>
+                        <li><a href="scrolltoachieve">Achievements</a></li>
+                        <li><a href="Resume/Resume_Sarvin-Shrivastava.pdf">Resume</a></li>
+                  </ul>
+            </div>
+            <div class="text-4xl md:hidden">
+                  <a href="#">&#8801;</a>
+            </div>
+      </nav>
+      <!-- nav ends -->
 
+      <!-- home starts -->
+      <section class="flex flex-col items-center md:hidden max-w-screen-sm" id="scrolltohome">
 
-      <section class="home flex" id="scrolltohome">
+            <div class="flex flex-col pt-9 w-4/5">
 
-            <div class="flex flex-col">
-
-                  <h1>I am ...</h1>
-                  <h2>Augmented Reality Enthusiast</h2>
-                  <h2>Game Devlopement Enthusiast</h2>
+                  <h1 class="text-white text-left">I am ...</h1>
+                  <h2 class="text-white text-left ml-40">A. R. Enthusiast</h2>
+                  <h2 class="text-white text-left ml-40">G. D. Enthusiast</h2>
                   <!-- <p class="heading-text">
                         Like exploreing different tecnological advancements in the field<br><br>
-                  </p> -->
+                  </p>  -->
             </div>
 
             <div>
-                  <img src="Images/avatar-anime2.png" alt="a anime styled image of a teen">
+                  <img class="size-52 pt-16" src="Images/avatar-anime2.png" alt="a anime styled image of a teen">
             </div>
       </section>
 
+      <section class="hidden md:flex md:items-center md:max-w-screen-4xl justify-center" id="scrolltohome">
+
+            <div class="flex flex-col pt-9">
+
+                  <h1 class="text-white">I am ...</h1>
+                  <h2 class="text-white">Augmented Reality Enthusiast</h2>
+                  <h2 class="text-white">Game Devlopement Enthusiast</h2>
+                  <!-- <p class="heading-text">
+                        Like exploreing different tecnological advancements in the field<br><br>
+                  </p>  -->
+            </div>
+
+            <div>
+                  <img class="size-72" src="Images/avatar-anime2.png" alt="a anime styled image of a teen">
+            </div>
+      </section>
+      <!-- home ends -->
+
+      <!-- 
       <section class="intro flex flex-col" id="scrolltointro">
             <h3>
                   Hi, I am Sarvin Shrivastava. Glad to meet you.
@@ -80,18 +98,18 @@
                   K.I.E.T. Group of Institutions Ghaziabad.
             </p>
 
-            <div>
-                  <div class="tech flex flex-col">
+            <div class="flex">
+                  <div class="card flex flex-col">
                         <h6>Languages I have worked on</h6>
                         <p>C, C-Sharp, HTML5, CSS3, Python, Java</p>
                   </div>
 
-                  <div class="tech flex flex-col">
+                  <div class="card flex flex-col">
                         <h6>IDEs I have used</h6>
                         <p>Atom, VS Code, VS Codium, C Lion, Intellij IDEA, PyCharm</p>
                   </div>
 
-                  <div class="tech flex flex-col">
+                  <div class="card flex flex-col">
                         <h6>My Coding Profiles</h6>
                         <div class="flex">
                               <a href="https://www.hackerrank.com/hACKERSarvin">
@@ -106,7 +124,7 @@
                         </div>
                   </div>
 
-                  <div class="tech flex flex-col">
+                  <div class="card flex flex-col">
                         <h6>Technologies I have worked with</h6>
                         <p>GitHub, Vuforia, WebGL, Google Cardboard, Google AR Core, Blender</p>
                   </div>
@@ -114,29 +132,21 @@
       </section>
 
       <section class="projects flex flex-col">
-            <h2 class="intro-heading" id="scrolltoproj">Some projects on which I have worked on</h2>
+            <h2 class="intro-heading" id="scrolltoproj">My Projects</h2>
 
-            <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ut et nostrum, similique molestias sed
-                  quo
-                  earum delectus aperiam iste temporibus optio labore, vel perspiciatis in nam ab. Quibusdam, doloribus!
+            <div class="flex">
+                  <div class="card flex flex-col">
+                        <h6>Home Vision</h6>
+                  </div>
+                  <div class="card flex flex-col">
+                        <h6>Blender Creation</h6>
+                  </div>
 
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos aliquid id quae voluptatum
-                  nesciunt eum? Sapiente non accusamus neque voluptate, quasi facere explicabo ad hic dolorem at
-                  aspernatur natus!
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita iusto unde natus dolorem
-                  officiis maiores. Optio deleniti inventore nesciunt aliquam atque natus nostrum cumque, ipsum modi
-                  delectus nobis corrupti exercitationem eveniet beatae distinctio. Culpa, ad quibusdam, sapiente ipsum
-                  ea iusto enim consequuntur quas mollitia maiores nulla perferendis sunt in, eius magni accusamus omnis
-                  ex ratione blanditiis natus nam consequatur. Nam alias cum perferendis officia fuga beatae neque,
-                  quisquam quia ullam quibusdam sunt vero adipisci rem soluta voluptatem molestiae rerum facere
-                  veritatis. Atque libero quam necessitatibus facilis optio soluta itaque at cum? Facere magnam quae
-                  unde consequuntur animi enim voluptatem?
-            </p>
+            </div>
       </section>
 
       <section class="achievements flex flex-col">
-            <h2 class="intro-heading" id="scrolltoachieve">Awards I won</h2>
+            <h2 class="intro-heading" id="scrolltoachieve">My Achievements</h2>
 
             <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nostrum at excepturi nobis dolores
@@ -175,7 +185,7 @@
                   <img src="Images/gmail.png" id="email-copy-button" alt="gmail icon">
                   <img src="Images/contacts.png" alt="contacts icon" id="contact-copy-button">
             </div>
-      </footer>
+      </footer> -->
 </body>
 
 </html>

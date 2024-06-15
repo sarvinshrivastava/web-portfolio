@@ -1,4 +1,4 @@
-/* Media Querie for smart-phone display */
+/* Media Querie for smart-phone display
 @media only screen and (min-width: 600px) and (max-width: 425px) {
   .home {
     flex-direction: column;
@@ -28,10 +28,10 @@
   }
 }
 
-/* media query for tablet display */
+/* media query for tablet display 
 @media only screen and (min-width:425px) and (max-width:786px) {}
 
-/* media query for desktop display */
+/* media query for desktop display
 @media only screen and (min-width:786px) and (max-width:1024px) {}
 
 @media only screen and (min-width:1024px) and (max-width:1440px) {
@@ -71,7 +71,7 @@
   }
 
   .topnav>div {
-    /* gap: 0.05rem; */
+    /* gap: 0.05rem;
     background-color: inherit;
     width: 29rem;
   }
@@ -85,7 +85,7 @@
   }
 
   .home {
-    height: 100vh;
+    height: 85vh;
   }
 
   .home>div>h1 {
@@ -101,7 +101,7 @@
   }
 
   .home>div>img {
-    width: 42rem;
+    width: 38.5rem;
     height: auto;
     padding: 0px 0vh 0px 20vh;
   }
@@ -133,14 +133,10 @@
   }
 
   .intro>div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* margin: auto 300px; */
     background-color: inherit;
   }
 
-  .tech {
-    /* Card template */
+  .card {
     width: 225px;
     height: 225px;
     margin: 20px 20px;
@@ -152,23 +148,23 @@
     justify-content: evenly;
   }
 
-  .tech>h6 {
+  .card>h6 {
     font-family: "Tilt Neon", cursive;
     font-size: large;
   }
 
-  .tech>p {
+  .card>p {
     font-family: "Edu SA Beginner", cursive;
   }
 
-  .tech>div>a>img {
+  .card>div>a>img {
     width: 45px;
     height: auto;
     margin: 0px auto;
   }
 
   .projects {
-    height: 88vh;
+    height: 100vh;
     background-color: #f9eae1;
     color: #7d4f50;
   }
@@ -185,7 +181,7 @@
   }
 
   .achievements {
-    height: 90vh;
+    height: 91vh;
     background-color: #7d4f50;
     color: #f9eae1;
   }
@@ -230,17 +226,17 @@
   * {
     background-color: #f9eae1;
     color: #7d4f50;
-    /* padding: 0%; */
+    padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    /* font-family: Arial, Helvetica, sans-serifd; */
+    font-family: Arial, Helvetica, sans-serifd;
   }
 }
 
-/* media query for large desktop display */
+/* media query for large desktop display
 @media only screen and (min-width:1440px) {}
 
-/* Style the navigation links */
+/* Style the navigation links 
 .topnav #myLinks {
   display: none;
   position: relative;
@@ -249,7 +245,7 @@
   background-color: #333;
 }
 
-/* Style navigation menu links */
+/* Style navigation menu links 
 .topnav a {
   color: white;
   padding: 14px 16px;
@@ -258,10 +254,10 @@
   display: block;
   margin-right: 20px;
 
-  /* margin: 30px; */
+  /* margin: 30px; 
 }
 
-/* Style the hamburger menu */
+/* Style the hamburger menu 
 .topnav a.icon {
   background: black;
 
@@ -269,21 +265,20 @@
   justify-content: center;
   position: absolute;
   right: 0;
-  /* margin: 30px; */
+  /* margin: 30px; 
 }
 
-/* Add a grey background color on mouse-over */
+/* Add a grey background color on mouse-over
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Style the active link (or home/logo) */
+/* Style the active link (or home/logo)
 .active {
   background-color: #04AA6D;
   color: white;
 }
-
 
 .topnav {
   display: flex;
@@ -303,4 +298,9 @@
   justify-content: center;
   align-items: center;
 
-}
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
