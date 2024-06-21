@@ -17,14 +17,14 @@
       </style>
 
       <!-- Styles -->
-      <link rel="stylesheet" href="/Styling/output.css">
+      <!-- <link rel="stylesheet" href="/Styling/output.css"> -->
 
       <!-- Favicon -->
        <link rel="shortcut icon" href="/Images/favico.ico" type="image/x-icon">
 
       <!-- Scripts -->
       <script src="Scripts/script.js" defer></script>
-      <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+      <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-black h-screen overflow-hidden max-w-screen-4xl">
@@ -49,37 +49,43 @@
       <!-- nav ends -->
 
       <!-- home starts -->
-      <section class="flex flex-col items-center md:hidden max-w-screen-sm" id="scrolltohome">
+      <!-- mobile view -->
+      <section class="flex flex-col items-center place-content-center md:hidden max-w-screen-sm" id="scrolltohome">
 
             <div class="flex flex-col pt-9 w-4/5">
 
-                  <h1 class="text-white text-left">I am ...</h1>
-                  <h2 class="text-white text-left ml-40">A. R. Enthusiast</h2>
-                  <h2 class="text-white text-left ml-40">G. D. Enthusiast</h2>
+                  <h1 class="text-white text-left text-xl">I am ...</h1>
+                  <h2 class="text-white text-left ml-4 text-lg">A. R. Enthusiast</h2>
+                  <h2 class="text-white text-left ml-4 text-lg">G. D. Enthusiast</h2>
                   <!-- <p class="heading-text">
                         Like exploreing different tecnological advancements in the field<br><br>
                   </p>  -->
             </div>
 
-            <div>
-                  <img class="size-52 pt-16" src="Images/avatar-anime2.png" alt="a anime styled image of a teen">
+            <div class="w-4/5">
+                  <div>
+                        <img class="size-3/4 mt-4 ml-auto mr-auto" src="Images/avatar-anime2.png" alt="a anime styled image of a teen">
+                  </div>
             </div>
       </section>
 
-      <section class="hidden md:flex md:items-center md:max-w-screen-4xl justify-center" id="scrolltohome">
+      <!-- larger than mobile view -->
+      <section class="md:max-w-screen-4xl" id="scrolltohome">
 
-            <div class="flex flex-col pt-9">
+            <div class="hidden items-center justify-center place-content-center md:flex">
+                  <div class="flex flex-col pt-9 ml-auto w-fit">
 
-                  <h1 class="text-white">I am ...</h1>
-                  <h2 class="text-white">Augmented Reality Enthusiast</h2>
-                  <h2 class="text-white">Game Devlopement Enthusiast</h2>
-                  <!-- <p class="heading-text">
-                        Like exploreing different tecnological advancements in the field<br><br>
-                  </p>  -->
-            </div>
-
-            <div>
-                  <img class="size-72" src="Images/avatar-anime2.png" alt="a anime styled image of a teen">
+                        <h1 class="text-white">I am ...</h1>
+                        <h2 class="text-white ml-4">Augmented Reality Enthusiast</h2>
+                        <h2 class="text-white ml-4">Game Devlopement Enthusiast</h2>
+                        <!-- <p class="heading-text">
+                              Like exploreing different tecnological advancements in the field<br><br>
+                        </p>  -->
+                  </div>
+      
+                  <div class="w-fit">
+                        <img class="size-2/5" src="Images/avatar-anime2.png" alt="a anime styled image of a teen">
+                  </div>
             </div>
       </section>
       <!-- home ends -->
