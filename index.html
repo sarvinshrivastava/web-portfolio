@@ -4,7 +4,7 @@
 <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Sarvin Shrivastava</title>
+      <title>Sarvin Shrivastava | Web Protfolio</title>
 
       <!-- Styling -->
       <style>
@@ -15,52 +15,22 @@
             @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
             @import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Tiro+Devanagari+Hindi&display=swap");
             @import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap");
-
-            /* Animations */
-            :root {
-                  --cursor-color: white;
-            }
-
-            .typing_ani {
-                  border-right: 2px solid var(--cursor-color);
-                  animation: 
-                        blinking 1s steps(1, end) infinite,
-                        typing 8s steps(40, end) infinite;
-                  overflow: hidden;
-                  white-space: nowrap;
-            }
-
-            @keyframes blinking {
-                  0% { border-color: transparent; }
-                  50% { border-color: var(--cursor-color); }
-                  100% { border-color: transparent; }
-            }
-
-            @keyframes typing {
-                  0% { width: 0 }
-                  25% { width: 50% }
-                  50% { width: 100% }
-                  75% { width: 100% }
-                  90% { width: 0}
-                  100% { width: 0 }
-            }
-
       </style>
 
-      <!-- Styles -->
-      <!-- <link rel="stylesheet" href="/Styling/output.css"> -->
+      <!-- Style sheet -->
+      <link rel="stylesheet" href="/Styling/pageproperties.css">
 
       <!-- Favicon -->
-      <link rel="shortcut icon" href="/Images/Logo_Portfolio-1.ico" type="image/x-icon" />
+      <link rel="shortcut icon" href="/Images/favico.ico" type="image/x-icon" />
 
       <!-- Scripts -->
       <script src="Scripts/script.js" defer></script>
       <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-black h-screen overflow-hidden max-w-screen-2xl">
+<body class="bg-black max-w-screen-2xl">
       <!-- nav starts -->
-      <nav class="flex justify-between align-middle items-center w-full px-14 py-6 h-fit">
+      <nav id="scrolltohome" class="flex justify-between align-middle items-center w-full px-14 py-6 h-fit">
             <div>
                   <img class="size-16 md:h-20 w-auto rounded-full" src="Images/avatar-anime3.png"
                         alt="nav bar image" />
@@ -68,14 +38,14 @@
             
             <div class="ml-4 hidden md:block align-middle">
                   <ul class="flex space-x-4 h-fit">
-                        <li class="px-3.5"><a href="scrolltohome" class="text-orange-500 ">Home</a></li>
-                        <li class="px-3.5"><a href="scrolltoproj" class="text-orange-500 ">Projects</a></li>
-                        <li class="px-3.5"><a href="scrolltoachieve" class="text-orange-500 ">Achievements</a></li>
+                        <li class="px-3.5"><a href="#scrolltohome" class="text-orange-500 ">Home</a></li>
+                        <li class="px-3.5"><a href="#scrolltoproj" class="text-orange-500 ">Projects</a></li>
+                        <li class="px-3.5"><a href="#scrolltoachieve" class="text-orange-500 ">Achievements</a></li>
                   </ul>
             </div>
             
             <div class="hidden bg-orange-500 rounded-md py-2 px-8 md:block">
-                  <a href="Resume/Resume_Sarvin4.pdf" class="text-white">Resume</a>
+                  <a href="./Resume/Resume_Sarvin4.pdf" class="text-white">Resume</a>
             </div>
             
             <div class="text-4xl text-orange-500 md:hidden">
@@ -85,10 +55,10 @@
       <!-- nav ends -->
 
       <!-- home starts -->
-      <section class="items-center justify-center" id="scrolltohome">
+      <section class="items-center justify-center">
             
-            <div class="flex flex-col md:flex-row md:justify-evenly items-center md:w-10/12 md:pt-3 md:align-middle md:mx-auto">
-
+            <div class="flex flex-col md:flex-row md:justify-evenly items-center md:w-10/12 md:mt-10 md:align-middle md:mx-auto">
+                  <!-- Destop View Starts -->
                   <div class="hidden w-[275px] md:flex md:flex-col pt-9 text-lg">
             
                         <h1 class="text-gray-500 text-lg font-semibold/6">Hi I am</h1>
@@ -113,12 +83,12 @@
                               </div>
                         </div>
                   </div>
-
+                  <!-- Desktop View Ends -->
                   <div class="size-[11rem] my-3 md:size-64">
                         <img src="Images/MyPhotoSq.jpg" class="rounded-full" alt="my photo" />
                   </div>
-
-                  <div class="flex flex-col pt-4 text-base w-[230px] md:hidden">
+                  <!-- Mobile View Starts-->
+                  <div class="flex flex-col pt-6 text-base w-[230px] md:hidden">
                         <h1 class="text-gray-500 text-semibold/6">Hi I am</h1>
                         <h2 class="text-gray-400 text-lg/9 font-bold">Sarvin Shrivastava</h2>
                         <h2 class="text-orange-500 text-3xl/loose font-semibold typing_ani">Unity Developer</h2>
@@ -142,15 +112,16 @@
                                     class="size-5 m-3 grayscale" id="contact-copy-button">
                         </div>
                   </div>
+                  <!-- Mobile View Ends -->
             </div>
 
-            <div class="flex flex-row justify-evenly my-6 md:my-12">
-                  <div class="border border-orange-500 rounded-xl">
+            <div class="flex flex-row justify-evenly my-10 md:my-12">
+                  <a href="./contactme.html" class="border border-orange-500 rounded-xl">
                         <h1 class= "text-white px-6 py-3">Contact</h1>
-                  </div>
-                  <div class="border border-orange-500 rounded-xl">
+                  </a>
+                  <a href="./blog-home.html" class="border border-orange-500 rounded-xl">
                         <h1 class="text-white px-6 py-3">Blogs</h1>
-                  </div>
+                  </a>
             </div>
       </section>
 
@@ -202,21 +173,24 @@
                   </div>
             </div>
       </section>
+      -->
 
-      <section class="projects flex flex-col">
-            <h2 class="intro-heading" id="scrolltoproj">My Projects</h2>
+      <section id="scrolltoproj" class="flex flex-col px-auto w-screen my-20">
+            <div class="w-fit">
+                  <h2 class="text-white text-2xl w-fit">My Projects</h2>
+            </div>
 
-            <div class="flex">
-                  <div class="card flex flex-col">
-                        <h6>Home Vision</h6>
+            <div class="w-fit flex flex-row">
+                  <div class="w-fit">
+                        <h6 class="text-white w-fit">Home Vision</h6>
                   </div>
-                  <div class="card flex flex-col">
-                        <h6>Blender Creation</h6>
+                  <div class="w-fit">
+                        <h6 class="text-white w-fit">Blender Creation</h6>
                   </div>
 
             </div>
       </section>
-
+      <!-- 
       <section class="achievements flex flex-col">
             <h2 class="intro-heading" id="scrolltoachieve">My Achievements</h2>
 
