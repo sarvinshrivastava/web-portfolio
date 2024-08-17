@@ -62,7 +62,7 @@ html {
 }
 
 .hover-text {
-    visibility: hidden;
+    visibility: visible;
     transition: opacity 0.5s ease;
 }
 
