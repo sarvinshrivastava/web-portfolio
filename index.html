@@ -26,29 +26,33 @@
       <!-- Scripts -->
       <script src="Scripts/script.js" defer></script>
       <script src="https://cdn.tailwindcss.com"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body class="bg-black max-w-screen-2xl">
       <!-- nav starts -->
       <nav id="scrolltohome" class="flex justify-between align-middle items-center w-full px-14 py-6 h-fit">
-            <div>
-                  <img class="size-16 md:h-20 w-auto rounded-full" src="Images/avatar-anime3.png" alt="nav bar image" />
-            </div>
+            <img class="size-12 md:h-20 w-auto rounded-full" src="Images/avatar-anime3.png" alt="nav bar image" />
 
-            <div class="ml-4 hidden md:block align-middle">
-                  <ul class="flex space-x-4 h-fit">
-                        <li class="px-3.5"><a href="#scrolltohome" class="text-gray-300 ">Home</a></li>
-                        <li class="px-3.5"><a href="#scrolltoproj" class="text-gray-300 ">Projects</a></li>
-                        <li class="px-3.5"><a href="#scrolltoachieve" class="text-gray-300 ">Achievements</a></li>
-                  </ul>
-            </div>
+            <ul id="menulist"
+                  class="ml-4 rounded-md align-middle flex flex-col md:flex-row items-center z-auto md:static absolute bg-black w-10/12 left-0 md:w-auto md:py-0 py-3 opacity-0 md:opacity-100 top-[-400px] transition-all ease-in duration-500">
+                  <li class="mx-3.5 my-2.5 md:my-0">
+                        <a href="#scrolltohome" class="text-gray-300 ">Home</a>
+                  </li>
+                  <li class="mx-3.5 my-2.5 md:my-0">
+                        <a href="#scrolltoproj" class="text-gray-300 ">Projects</a>
+                  </li>
+                  <li class="mx-3.5 my-2.5 md:my-0">
+                        <a href="#scrolltoachieve" class="text-gray-300 ">Achievements</a>
+                  </li>
+                  <li class="bg-orange-500 rounded-md my-2.5 py-2 mx-3.5 w-fit">
+                        <a href="./Resume/Resume_Sarvin4.pdf" class="text-white px-6">Resume</a>
+                  </li>
+            </ul>
 
-            <div class="hidden bg-orange-500 rounded-md py-2 px-8 md:block">
-                  <a href="./Resume/Resume_Sarvin4.pdf" class="text-white">Resume</a>
-            </div>
-
-            <div class="text-4xl text-orange-500 md:hidden">
-                  <a href="#">&#8801;</a>
+            <div class="text-4xl text-orange-500 md:hidden cursor-pointer">
+                  <ion-icon name="menu" class="text-3xl" onclick="menu(this)"></ion-icon>
             </div>
       </nav>
       <!-- nav ends -->
@@ -65,19 +69,21 @@
                         <h2 class="text-gray-400 text-xl/9 font-bold">Sarvin Shrivastava</h2>
                         <h2 class="text-orange-500 text-4xl/loose font-semibold typing_ani">Unity Developer</h2>
                         <div class="flex flex-row justify-between">
-                              <a href="https://github.com/sarvinshrivastava" class="border-2 rounded-full">
-                                    <img src="Images/github-512.png" class="size-5 m-3 " alt="github icon">
+                              <a href="https://github.com/sarvinshrivastava" class="  rounded-full">
+                                    <img src="Images/github-512.png" class="size-6 " alt="github icon">
                               </a>
                               <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/"
-                                    class="border-2 rounded-full">
-                                    <img src="Images/linkedin-512.png" class="size-5 m-3 grayscale" alt="linkedin icon">
+                                    class="  rounded-full">
+                                    <img src="Images/linkedin-512.png" class="size-6 grayscale hover:grayscale-0"
+                                          alt="linkedin icon">
                               </a>
-                              <div class="border-2 rounded-full">
-                                    <img src="Images/gmail-512.png" id="email-copy-button" class="size-5 m-3 grayscale"
-                                          alt="gmail icon">
+                              <div class="  rounded-full">
+                                    <img src="Images/gmail-512.png" id="email-copy-button"
+                                          class="size-6 grayscale cursor-pointer hover:grayscale-0" alt="gmail icon">
                               </div>
-                              <div class="border-2 rounded-full">
-                                    <img src="Images/contacts-512.png" alt="contacts icon" class="size-5 m-3 grayscale"
+                              <div class="  rounded-full">
+                                    <img src="Images/contacts-512.png" alt="contacts icon"
+                                          class="size-6 grayscale cursor-pointer hover:grayscale-0"
                                           id="contact-copy-button">
                               </div>
                         </div>
@@ -95,19 +101,18 @@
                   </div>
 
                   <div class="flex flex-row md:hidden justify-between w-[230px] pt-6">
-                        <a href="https://github.com/sarvinshrivastava" class="border-2 rounded-full">
-                              <img src="Images/github-512.png" class="size-5 m-3 " alt="github icon">
+                        <a href="https://github.com/sarvinshrivastava" class="  rounded-full">
+                              <img src="Images/github-512.png" class="size-6 " alt="github icon">
                         </a>
-                        <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/"
-                              class="border-2 rounded-full">
-                              <img src="Images/linkedin-512.png" class="size-5 m-3 grayscale" alt="linkedin icon">
+                        <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" class="  rounded-full">
+                              <img src="Images/linkedin-512.png" class="size-6 grayscale" alt="linkedin icon">
                         </a>
-                        <div class="border-2 rounded-full">
-                              <img src="Images/gmail-512.png" id="email-copy-button" class="size-5 m-3 grayscale"
+                        <div class="  rounded-full">
+                              <img src="Images/gmail-512.png" id="email-copy-button" class="size-6 grayscale"
                                     alt="gmail icon">
                         </div>
-                        <div class="border-2 rounded-full">
-                              <img src="Images/contacts-512.png" alt="contacts icon" class="size-5 m-3 grayscale"
+                        <div class="  rounded-full">
+                              <img src="Images/contacts-512.png" alt="contacts icon" class="size-6 grayscale"
                                     id="contact-copy-button">
                         </div>
                   </div>
@@ -174,48 +179,10 @@
       </section>
       -->
 
-      <section id="scrolltoproj" class="flex flex-col px-auto h-auto w-screen my-20">
+      <!-- <section id="scrolltoproj" class="flex flex-col px-auto h-auto w-screen my-20">
             <h2 class="text-white text-center my-4 text-2xl">My Projects</h2>
-
-            <div class="flex flex-col md:flex-row justify-center md:justify-evenly">
-                  <!-- HomeVision Card -->
-                  <div class="image-container w-32 duration-300 hover:w-48 rounded-xl">
-                        <img class="grayscale hover:grayscale-0 rounded-xl hover:drop-shadow-xl" src="Images/home vision.jpg"
-                              alt="homevision">
-                        <div class="flex flex-col">
-                              <h4 class="text-orange-600 mt-2 text-center text-lg">Home Vision</h4>
-                              <h6 class="hover-text text-white text-base text-center">This project automates the process of creating a digital twin of any property using the floor plan.</h6>
-                        </div>
-                  </div>
-                  <!-- Blender Builds Card -->
-                  <div class="image-container relative w-32 duration-300 hover:w-48 rounded-xl">
-                        <img class="grayscale hover:grayscale-0 rounded-xl hover:drop-shadow-xl" src="Images/Render3.png"
-                              alt="Blender Builds">
-                        <div class="flex flex-col">
-                              <h4 class="text-orange-600 mt-2 text-center text-lg">Blender Builds</h4>
-                              <h6 class="hover-text text-white text-base text-center">This is a collection of my favorite Blender builds.</h6>
-                        </div>
-                  </div>
-                  <!-- Mini Game Card -->
-                  <div class="image-container relative w-32 duration-300 hover:w-48 rounded-xl">
-                        <img class="grayscale hover:grayscale-0 rounded-xl hover:drop-shadow-xl" src="Images/minigame.png"
-                              alt="Mini Game">
-                        <div class="flex flex-col">
-                              <h4 class="text-orange-600 mt-2 text-center text-lg">Mini Game</h4>
-                              <h6 class="hover-text text-white text-base text-center">This project is a simple and fun game developed using the Unity game engine. The objective of the game is to feed the farm animals and score as high as possible.</h6>
-                        </div>
-                  </div>
-                  <!-- Flutter App Card -->
-                  <div class="image-container relative w-24 duration-300 hover:w-48 rounded-xl">
-                        <img class="grayscale hover:grayscale-0 rounded-xl hover:drop-shadow-xl" src="Images/flutter_app-1920.jpg"
-                              alt="homevision">
-                        <div class="flex flex-col">
-                              <h4 class="text-orange-600 mt-2 text-center text-lg">Basic Flutter Application</h4>
-                              <h6 class="hover-text text-white text-base text-center">A simple Flutter application demonstrating navigation between pages and dynamic UI updates</h6>
-                        </div>
-                  </div>
-            </div>
-      </section>
+      </section> -->
+      
       <!-- 
       <section class="achievements flex flex-col">
             <h2 class="intro-heading" id="scrolltoachieve">My Achievements</h2>
