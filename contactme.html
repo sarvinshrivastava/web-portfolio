@@ -17,8 +17,8 @@
 
 <body class="bg-black overflow-hidden max-w-screen-2xl">
 
-    <nav class="md:hidden">
-        <a href="./index.html" class="text-white text-3xl p-5">&larr;</a>
+    <nav class="my-3 md:hidden">
+        <a href="./index.html" class="text-white text-3xl mx-6">&larr;</a>
     </nav>
 
     <section class="h-full align-middle">
@@ -34,18 +34,21 @@
                 <div class="flex flex-row mb-4 align-middle">
                     <label for="name" class="text-white h-fit my-auto mr-4">Name</label>
                     <input type="text" id="name" name="name" value="John"
-                        class="bg-gray-300 rounded-md text-gray-600 px-3 py-2" onfocus="clearField(this)" onblur="restoreField(this)">
+                        class="bg-gray-300 rounded-md text-gray-600 px-3 py-2" onfocus="clearField(this)"
+                        onblur="restoreField(this)">
                 </div>
 
                 <div class="flex flex-row mb-4 align-middle">
                     <label for="email" class="text-white h-fit my-auto mr-4">Email</label>
                     <input type="email" id="email" name="email" value="Doe@abc.xyc"
-                        class="bg-gray-300 rounded-md text-gray-600 px-3 py-2" onfocus="clearField(this)" onblur="restoreField(this)">
+                        class="bg-gray-300 rounded-md text-gray-600 px-3 py-2" onfocus="clearField(this)"
+                        onblur="restoreField(this)">
                 </div>
 
                 <div class="flex flex-col mb-4">
                     <label for="message" class="text-white mb-2">Message</label>
-                    <textarea id="message" name="message" rows="4" onfocus="clearField(this)" onblur="restoreField(this)"
+                    <textarea id="message" name="message" rows="4" onfocus="clearField(this)"
+                        onblur="restoreField(this)"
                         class="bg-gray-300 rounded-md text-gray-600 px-3 py-2 w-64 resize-none">Your Message...</textarea>
                 </div>
 
@@ -58,7 +61,8 @@
                             class="bg-orange-400 text-white  hover:bg-orange-500 rounded-lg px-6 py-3 cursor-pointer mx-auto">
                     </div>
                     <a href="./index.html" class="w-fit">
-                        <p class="bg-orange-400 text-white  hover:bg-orange-500 rounded-lg px-6 py-3 cursor-pointer mx-auto">
+                        <p
+                            class="bg-orange-400 text-white  hover:bg-orange-500 rounded-lg px-6 py-3 cursor-pointer mx-auto">
                             Cancel
                         </p>
                     </a>
@@ -70,23 +74,21 @@
     </section>
 
     <section class="flex justify-center mt-10">
-        <div class="w-5/12 justify-evenly flex flex-row">
-            <a href="https://github.com/sarvinshrivastava" class = "border-2 rounded-full">
-                <img src="Images/github-512.png" class="size-5 m-3 " alt="github icon">
-          </a>
-          <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" 
-                class = "border-2 rounded-full">
-                <img src="Images/linkedin-512.png" class="size-5 m-3 grayscale" 
-                alt="linkedin icon">
-          </a>
-          <div class="border-2 rounded-full">
-                <img src="Images/gmail-512.png" id="email-copy-button" 
-                class="size-5 m-3 grayscale" alt="gmail icon">
-          </div>
-          <div class="border-2 rounded-full">
-                <img src="Images/contacts-512.png" alt="contacts icon" 
-                      class="size-5 m-3 grayscale" id="contact-copy-button">
-          </div>
+        <div class="md:w-5/12 justify-evenly flex flex-row">
+            <a href="https://github.com/sarvinshrivastava" class="rounded-full px-2.5 md:px-0">
+                <img src="Images/github-512.png" class="size-7" alt="github icon">
+            </a>
+            <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" class="rounded-full px-2.5 md:px-0">
+                <img src="Images/linkedin-512.png" class="size-7 grayscale hover:grayscale-0" alt="linkedin icon">
+            </a>
+            <div class="rounded-full px-2.5 md:px-0">
+                <img src="Images/gmail-512.png" id="email-copy-button"
+                    class="size-7 grayscale hover:grayscale-0 cursor-pointer" alt="gmail icon">
+            </div>
+            <div class="rounded-full px-2.5 md:px-0">
+                <img src="Images/contacts-512.png" alt="contacts icon"
+                    class="size-7 grayscale hover:grayscale-0 cursor-pointer" id="contact-copy-button">
+            </div>
         </div>
     </section>
 

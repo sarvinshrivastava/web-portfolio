@@ -72,3 +72,20 @@ document.querySelectorAll(".image-container").forEach((container) => {
     }
   });
 });
+
+function menu(e) {
+  // Variables
+  var postiton = '80px';
+
+  // Geting from DOM
+  const menuList = document.getElementById('menulist');
+  const isOpen = menuList.style.top == postiton;
+
+  // Condition
+  menuList.style.top = isOpen ? '-400px' : postiton;
+  menuList.style.opacity = isOpen ? '0' : '1';
+  e.name = isOpen ? 'menu' : 'close';
+
+  // Logging
+  console.log("task done!");
+}
