@@ -11,8 +11,19 @@
     <link rel="shortcut icon" href="/Images/favico.ico" type="image/x-icon" />
 
     <!-- Scripts -->
+        <!-- Local Scripts -->
     <script src="Scripts/script.js" defer></script>
+        <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+          (function(){
+             emailjs.init({
+               publicKey: "Ptirjeddr_GaW0DSq",
+             });
+          })();
+    </script>
 </head>
 
 <body class="bg-black overflow-hidden max-w-screen-2xl">
@@ -33,14 +44,14 @@
 
                 <div class="flex flex-row mb-4 align-middle">
                     <label for="name" class="text-white h-fit my-auto mr-4">Name</label>
-                    <input type="text" id="name" name="name" value="John"
+                    <input type="text" id="name" name="name" placeholder="John"
                         class="bg-gray-300 rounded-md text-gray-600 px-3 py-2" onfocus="clearField(this)"
                         onblur="restoreField(this)">
                 </div>
 
                 <div class="flex flex-row mb-4 align-middle">
                     <label for="email" class="text-white h-fit my-auto mr-4">Email</label>
-                    <input type="email" id="email" name="email" value="Doe@abc.xyc"
+                    <input type="email" id="email" name="email" placeholder="Doe@abc.xyc"
                         class="bg-gray-300 rounded-md text-gray-600 px-3 py-2" onfocus="clearField(this)"
                         onblur="restoreField(this)">
                 </div>
@@ -52,12 +63,12 @@
                         class="bg-gray-300 rounded-md text-gray-600 px-3 py-2 w-64 resize-none">Your Message...</textarea>
                 </div>
 
-                <input type="submit" value="Submit"
+                <input type="submit" value="Submit" onclick="sendMail()"
                     class="md:hidden text-white  bg-orange-400 hover:bg-orange-500 rounded-lg px-6 py-3 cursor-pointer">
 
                 <div class="hidden md:flex md:flex-row w-full justify-evenly">
                     <div class="w-fit">
-                        <input type="submit" value="Submit"
+                        <input type="submit" value="Submit" onclick="sendMail()"
                             class="bg-orange-400 text-white  hover:bg-orange-500 rounded-lg px-6 py-3 cursor-pointer mx-auto">
                     </div>
                     <a href="./index.html" class="w-fit">

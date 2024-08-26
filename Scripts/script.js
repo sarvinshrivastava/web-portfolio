@@ -24,55 +24,24 @@ document
     alert("Contact has been copied!");
   });
 
-// function myFunction() {
-//     var x = document.getElementById("myLinks");
-//     if (x.style.display === "block") {
-//       x.style.display = "none";
-//     } else {
-//       x.style.display = "block";
-//     }
-// }
 
 // Clear the input field when focused
-function clearField(field) {
-  if (field.defaultValue == field.value) {
-    field.value = "";
-    field.style.color = "#000";
-  }
-}
+// function clearField(field) {
+//   if (field.defaultValue == field.value) {
+//     field.value = "";
+//     field.style.color = "#000";
+//   }
+// }
 
 // Restore the input field when blured
-function restoreField(field) {
-  if (field.value.trim() === "") {
-    field.value = field.defaultValue;
-    field.style.color = "#6b7280";
-  }
-}
+// function restoreField(field) {
+//   if (field.value.trim() === "") {
+//     field.value = field.defaultValue;
+//     field.style.color = "#6b7280";
+//   }
+// }
 
-document.querySelectorAll(".image-container").forEach((container) => {
-  const hoverTextHTML = `
-      <h6 class="hover-text text-white text-base text-center">This project automates the process of creating a digital
-      twin of any property using the floor plan.</h6>
-  `;
-
-  container.addEventListener("mouseenter", () => {
-    // Check if the h6 tag already exists to avoid duplication
-    if (!container.querySelector(".hover-text")) {
-      container
-        .querySelector(".flex-col")
-        .insertAdjacentHTML("beforeend", hoverTextHTML);
-    }
-  });
-
-  container.addEventListener("mouseleave", () => {
-    // Remove the h6 tag on mouse leave
-    const hoverText = container.querySelector(".hover-text");
-    if (hoverText) {
-      hoverText.remove();
-    }
-  });
-});
-
+// Hamburger Menu
 function menu(e) {
   // Variables
   var postiton = '80px';
@@ -88,4 +57,51 @@ function menu(e) {
 
   // Logging
   console.log("task done!");
+}
+
+// Validate Function
+function validateForm() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const isNotEmpty = (field) => field.trim().length > 0;
+
+  if (!validateEmail(email)) {
+    alert("Invalid email");
+    return false;
+  }
+  if (!isNotEmpty(name)) {
+    alert("Name is required");
+    return false;
+  }
+  if (!isNotEmpty(message)) {
+    alert("Message is required");
+    return false;
+  }
+  return true;
+}
+
+// EmailJS
+function sendMail(event) {
+  // event.preventDefault();
+
+  if (validateForm()) {
+    const templateParams = {
+      name: document.getElementById('name').value,
+      message: document.getElementById('message').value,
+      email: document.getElementById('email').value,
+    };
+
+    console.log(templateParams);
+
+    emailjs.send('service_2hz6tjs', 'template_gezwadr', templateParams)
+      .then((response) => {
+        alert('Message sent successfully!');
+      }, (error) => {
+        console.log(error);
+        alert('Failed to send message. Please try again.');
+      });
+  }
 }
