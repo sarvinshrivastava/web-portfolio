@@ -24,13 +24,16 @@
       <link rel="shortcut icon" href="/Images/favico.ico" type="image/x-icon" />
 
       <!-- Scripts -->
+      <!-- Local Script -->
       <script src="Scripts/script.js" defer></script>
+      <!-- Tailwind CSS -->
       <script src="https://cdn.tailwindcss.com"></script>
+      <!-- IonIcons -->
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body class="bg-black max-w-screen-2xl">
+<body class="bg-black max-w-screen-2xl h-full">
       <!-- nav starts -->
       <nav id="scrolltohome" class="flex justify-between align-middle items-center w-full px-14 py-6 h-fit">
             <img class="size-12 md:h-20 w-auto rounded-full" src="Images/avatar-anime3.png" alt="nav bar image" />
@@ -68,19 +71,18 @@
                         <h2 class="text-gray-400 text-xl/9 font-bold">Sarvin Shrivastava</h2>
                         <h2 class="text-orange-500 text-4xl/loose font-semibold typing_ani">Unity Developer</h2>
                         <div class="flex flex-row justify-between">
-                              <a href="https://github.com/sarvinshrivastava" class="  rounded-full">
+                              <a href="https://github.com/sarvinshrivastava" class="rounded-full">
                                     <img src="Images/github-512.png" class="size-6 " alt="github icon">
                               </a>
-                              <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/"
-                                    class="  rounded-full">
+                              <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" class="rounded-full">
                                     <img src="Images/linkedin-512.png" class="size-6 grayscale hover:grayscale-0"
                                           alt="linkedin icon">
                               </a>
-                              <div class="  rounded-full">
+                              <div class="rounded-full">
                                     <img src="Images/gmail-512.png" id="email-copy-button"
                                           class="size-6 grayscale cursor-pointer hover:grayscale-0" alt="gmail icon">
                               </div>
-                              <div class="  rounded-full">
+                              <div class="rounded-full">
                                     <img src="Images/contacts-512.png" alt="contacts icon"
                                           class="size-6 grayscale cursor-pointer hover:grayscale-0"
                                           id="contact-copy-button">
@@ -126,61 +128,71 @@
                   </a>
             </div>
       </section>
-
       <!-- home ends -->
 
-      <!-- 
-      <section class="intro flex flex-col" id="scrolltointro">
-            <h3>
-                  Hi, I am Sarvin Shrivastava. Glad to meet you.
-            </h3>
-            <p>
-                  I learnt AR/VR from my club Tecnocrats
-                  and Web-Devlopment from LinkedIn Learning course provided by my college.
-                  I invest my spare time in upgrading / polishing my skills or spending time with my friends and family
-                  members.
-                  Currently I am pursuing my Bachelor in Tecnology (B.Tech) degree from
-                  K.I.E.T. Group of Institutions Ghaziabad.
-            </p>
 
-            <div class="flex">
-                  <div class="card flex flex-col">
-                        <h6>Languages I have worked on</h6>
-                        <p>C, C-Sharp, HTML5, CSS3, Python, Java</p>
-                  </div>
+      <section class="my-[5.2rem] flex flex-col w-screen items-center" id="scrolltointro">
+            <h4 class="text-gray-300 w-10/12 md:w-7/12 text-center text-base">
+                  I'm a B.Tech student in Computer Science and Engineering at KIET Group of Institutions Ghaziabad,
+                  specializing in AR and VR technologies. With hands-on experience as an AR-VR Lead at Technocrats and
+                  having
+                  completed an internship at NEC India, I am passionate about creating immersive, tech-driven solutions
+                  that solve
+                  complex problems.
+            </h4>
 
-                  <div class="card flex flex-col">
-                        <h6>IDEs I have used</h6>
-                        <p>Atom, VS Code, VS Codium, C Lion, Intellij IDEA, PyCharm</p>
-                  </div>
-
-                  <div class="card flex flex-col">
-                        <h6>My Coding Profiles</h6>
-                        <div class="flex">
-                              <a href="https://www.hackerrank.com/hACKERSarvin">
-                                    <img src="Images/hackerrank.png" alt="hackerrank icon">
-                              </a>
-                              <a href="https://leetcode.com/sarvin5124/">
-                                    <img src="Images/leetcode.png" alt="leetcode icon">
-                              </a>
-                              <a href="https://www.naukri.com/code360/profile/arcticplayer">
-                                    <img src="Images/coding-ninjas.png" alt="coding-ninjas icon">
-                              </a>
+            <div class="mt-12 flex flex-col md:flex-row  md:justify-evenly w-screen">
+                  <div class="w-48 h-48 bg-neutral-800 rounded-xl place-content-center">
+                        <div class="flex flex-col text-center w-10/12 mx-auto">
+                              <h6 class="mb-1.5 text-orange-500 text-lg">Languages I have worked on</h6>
+                              <p class="mt-1.5 text-neutral-200 text-base">C, C++, C-Sharp, HTML5, CSS3, Python,
+                                    JavaScript</p>
                         </div>
                   </div>
 
-                  <div class="card flex flex-col">
-                        <h6>Technologies I have worked with</h6>
-                        <p>GitHub, Vuforia, WebGL, Google Cardboard, Google AR Core, Blender</p>
+                  <div class="w-48 h-48 bg-neutral-800 rounded-xl place-content-center">
+                        <div class="flex flex-col text-center w-10/12 mx-auto">
+                              <h6 class="mb-1.5 text-orange-500 text-lg">IDEs I have used</h6>
+                              <p class="mt-1.5 text-neutral-200 text-base">Atom, VS Code, VS Codium, C Lion, Intellij
+                                    IDEA, PyCharm, Android Studio</p>
+                        </div>
+                  </div>
+
+                  <div class="w-48 h-48 bg-neutral-800 rounded-xl place-content-center">
+                        <div class="flex flex-col text-center w-10/12 mx-auto">
+                              <h6 class="mb-1.5 text-orange-500 text-lg">My Coding Profiles</h6>
+                              <div class="mt-1.5 flex flex-row mx-auto justify-between w-9/12">
+                                    <a href="https://www.hackerrank.com/hACKERSarvin">
+                                          <img src="Images/hackerrank-512.png"
+                                                class="size-8 grayscale hover:grayscale-0" alt="hackerrank icon">
+                                    </a>
+                                    <a href="https://leetcode.com/sarvin5124/">
+                                          <img src="Images/leetcode-512.png" class="size-8 grayscale hover:grayscale-0"
+                                                alt="leetcode icon">
+                                    </a>
+                                    <a href="https://www.naukri.com/code360/profile/arcticplayer">
+                                          <img src="Images/coding-ninjas-512.png"
+                                                class="size-8 grayscale hover:grayscale-0" alt="coding-ninjas icon">
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="w-48 h-48 bg-neutral-800 rounded-xl place-content-center">
+                        <div class="flex flex-col text-center w-10/12 mx-auto">
+                              <h6 class="mb-1.5 text-orange-500 text-lg">Technologies I have worked with</h6>
+                              <p class="mt-1.5 text-neutral-200 text-base">GitHub, Vuforia, WebGL, Flutter,
+                                    Google AR Core, Blender</p>
+                        </div>
                   </div>
             </div>
       </section>
-      -->
+
 
       <!-- <section id="scrolltoproj" class="flex flex-col px-auto h-auto w-screen my-20">
             <h2 class="text-white text-center my-4 text-2xl">My Projects</h2>
       </section> -->
-      
+
       <!-- 
       <section class="achievements flex flex-col">
             <h2 class="intro-heading" id="scrolltoachieve">My Achievements</h2>
@@ -208,21 +220,24 @@
                   similique voluptatum laborum quisquam magni deserunt numquam eligendi. Sint sed magnam in quas rerum
                   atque eveniet, totam saepe officia veritatis facilis pariatur obcaecati?
             </p>
-      </section>
+      </section> -->
 
-      <footer class="flex flex-col">
-            <p class="footer-text">Let's Connect!</p>
-            <div class="flex">
-                  <a href="https://github.com/sarvinshrivastava">
-                        <img src="Images/github.svg" alt="github icon">
-                  </a>
-                  <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/">
-                        <img src="Images/linkedin.png" alt="linkedin icon">
-                  </a>
-                  <img src="Images/gmail.png" id="email-copy-button" alt="gmail icon">
-                  <img src="Images/contacts.png" alt="contacts icon" id="contact-copy-button">
+      <footer class="flex flex-row justify-between mx-auto py-5 w-5/12 md:w-2/12">
+            <a href="https://github.com/sarvinshrivastava" class="rounded-full">
+                  <img src="Images/github-512.png" class="size-6" alt="github icon">
+            </a>
+            <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" class="rounded-full">
+                  <img src="Images/linkedin-512.png" class="size-6 grayscale hover:grayscale-0" alt="linkedin icon">
+            </a>
+            <div class="rounded-full">
+                  <img src="Images/gmail-512.png" id="email-copy-button"
+                        class="size-6 grayscale cursor-pointer hover:grayscale-0" alt="gmail icon">
             </div>
-      </footer> -->
+            <div class="rounded-full">
+                  <img src="Images/contacts-512.png" alt="contacts icon"
+                        class="size-6 grayscale cursor-pointer hover:grayscale-0" id="contact-copy-button">
+            </div>
+      </footer>
 </body>
 
 </html>

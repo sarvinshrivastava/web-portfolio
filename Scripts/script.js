@@ -24,14 +24,6 @@ document
     alert("Contact has been copied!");
   });
 
-// function myFunction() {
-//     var x = document.getElementById("myLinks");
-//     if (x.style.display === "block") {
-//       x.style.display = "none";
-//     } else {
-//       x.style.display = "block";
-//     }
-// }
 
 // Clear the input field when focused
 function clearField(field) {
@@ -49,30 +41,7 @@ function restoreField(field) {
   }
 }
 
-document.querySelectorAll(".image-container").forEach((container) => {
-  const hoverTextHTML = `
-      <h6 class="hover-text text-white text-base text-center">This project automates the process of creating a digital
-      twin of any property using the floor plan.</h6>
-  `;
-
-  container.addEventListener("mouseenter", () => {
-    // Check if the h6 tag already exists to avoid duplication
-    if (!container.querySelector(".hover-text")) {
-      container
-        .querySelector(".flex-col")
-        .insertAdjacentHTML("beforeend", hoverTextHTML);
-    }
-  });
-
-  container.addEventListener("mouseleave", () => {
-    // Remove the h6 tag on mouse leave
-    const hoverText = container.querySelector(".hover-text");
-    if (hoverText) {
-      hoverText.remove();
-    }
-  });
-});
-
+// Hamburger Menu
 function menu(e) {
   // Variables
   var postiton = '80px';
