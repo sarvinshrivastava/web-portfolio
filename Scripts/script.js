@@ -26,20 +26,20 @@ document
 
 
 // Clear the input field when focused
-// function clearField(field) {
-//   if (field.defaultValue == field.value) {
-//     field.value = "";
-//     field.style.color = "#000";
-//   }
-// }
+function clearField(field) {
+  if (field.defaultValue == field.value) {
+    field.value = "";
+    field.style.color = "#000";
+  }
+}
 
 // Restore the input field when blured
-// function restoreField(field) {
-//   if (field.value.trim() === "") {
-//     field.value = field.defaultValue;
-//     field.style.color = "#6b7280";
-//   }
-// }
+function restoreField(field) {
+  if (field.value.trim() === "") {
+    field.value = field.defaultValue;
+    field.style.color = "#6b7280";
+  }
+}
 
 // Hamburger Menu
 function menu(e) {
@@ -57,51 +57,4 @@ function menu(e) {
 
   // Logging
   console.log("task done!");
-}
-
-// Validate Function
-function validateForm() {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  const isNotEmpty = (field) => field.trim().length > 0;
-
-  if (!validateEmail(email)) {
-    alert("Invalid email");
-    return false;
-  }
-  if (!isNotEmpty(name)) {
-    alert("Name is required");
-    return false;
-  }
-  if (!isNotEmpty(message)) {
-    alert("Message is required");
-    return false;
-  }
-  return true;
-}
-
-// EmailJS
-function sendMail(event) {
-  // event.preventDefault();
-
-  if (validateForm()) {
-    const templateParams = {
-      name: document.getElementById('name').value,
-      message: document.getElementById('message').value,
-      email: document.getElementById('email').value,
-    };
-
-    console.log(templateParams);
-
-    emailjs.send('service_2hz6tjs', 'template_gezwadr', templateParams)
-      .then((response) => {
-        alert('Message sent successfully!');
-      }, (error) => {
-        console.log(error);
-        alert('Failed to send message. Please try again.');
-      });
-  }
 }
