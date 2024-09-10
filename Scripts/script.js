@@ -58,3 +58,27 @@ function menu(e) {
   // Logging
   console.log("task done!");
 }
+
+// Project Section animation
+document.addEventListener('DOMContentLoaded', function () {
+  const hoverImages = document.querySelectorAll('.hover-image');
+  const githubLogos = document.querySelectorAll('.github-logo');
+
+  hoverImages.forEach((image, index) => {
+      image.addEventListener('mouseover', () => {
+          const logo = githubLogos[index];
+          logo.style.opacity = '1'; // Set opacity to full
+          logo.classList.remove('scale-0'); // Remove the scale-0 class
+          logo.classList.add('scale-100'); // Add the scale-100 class
+      });
+
+      image.addEventListener('mouseout', () => {
+          const logo = githubLogos[index];
+          logo.classList.remove('scale-100'); // Remove the scale-100 class
+          logo.classList.add('scale-0'); // Add the scale-0 class
+          setTimeout(() => {
+              logo.style.opacity = '0'; // Set opacity back to 0
+          }, 300); // Match the duration of the scaling animation
+      });
+  });
+});

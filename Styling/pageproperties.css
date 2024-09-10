@@ -32,7 +32,7 @@ html {
 }
 
 
-/* Animations */
+/* Home Section Text Animation */
 :root {
     --cursor-color: white;
 }
@@ -69,3 +69,37 @@ html {
 .image-container:hover .hover-text {
     visibility: visible;
 }
+
+/* Project Section Cards Animation */
+/* @keyframes grow {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 32px;
+    }
+}
+
+@keyframes shrink {
+    from {
+        width: 32px;
+    }
+    to {
+        width: 0px;
+    }
+}
+
+.github-logo {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Smooth opacity transition *
+    animation: none; /* Initially no animation *
+}
+
+.github-logo.grow {
+    animation: grow 0.5s forwards; /* Apply the grow animation *
+}
+
+.github-logo.shrink {
+    animation: shrink 0.5s forwards; /* Apply the shrink animation *
+} */
