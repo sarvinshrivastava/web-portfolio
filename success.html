@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success!</title>
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="/Styling/pageproperties.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Images/favico.ico" type="image/x-icon" />
+
+    <!-- Scripts -->
+    <!-- Local Script -->
+    <script src="Scripts/script.js" defer></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-black max-w-screen-2xl h-screen">
+    <section class="flex flex-col items-center h-screen justify-center">
+        <h3 class="text-neutral-300 text-lg my-5">You have successfully sent the message!</h3>
+        <h5 class="text-neutral-400 text-base my-1.5">You are being redirected to the main page in</h5>
+        <h1 id="counter" class="text-orange-500 text-8xl my-2.5">5</h1>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let counter = 5;
+            const interval = setInterval(() => {
+                counter--;
+                document.getElementById('counter').textContent = counter;
+                if (counter === 0) {
+                    clearInterval(interval);
+                    window.location.href = 'index.html';
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
