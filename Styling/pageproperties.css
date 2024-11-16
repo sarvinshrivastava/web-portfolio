@@ -4,7 +4,6 @@ body {
     overflow-x: hidden; 
 }
 
-
 /* Scrollbar */
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
@@ -12,7 +11,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #000; /* background of the scrollbar track */
+    background: #a000; /* background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -71,7 +70,7 @@ html {
 }
 
 /* Project Section Cards Animation */
-/* @keyframes grow {
+@keyframes grow {
     from {
         width: 0px;
     }
@@ -89,17 +88,16 @@ html {
     }
 }
 
-.github-logo {
-    width: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease; /* Smooth opacity transition *
-    animation: none; /* Initially no animation *
+/* Scroll to top */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
 }
 
-.github-logo.grow {
-    animation: grow 0.5s forwards; /* Apply the grow animation *
-}
-
-.github-logo.shrink {
-    animation: shrink 0.5s forwards; /* Apply the shrink animation *
-} */
+  /* Popup content */
+  /* .popup-content {
+    transform: translate(-50%, -50%);
+  } */

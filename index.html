@@ -19,6 +19,7 @@
 
       <!-- Style sheet -->
       <link rel="stylesheet" href="/Styling/pageproperties.css">
+      <link rel="stylesheet" href="/Styling/output.css">
 
       <!-- Favicon -->
       <link rel="shortcut icon" href="/Images/favico.ico" type="image/x-icon" />
@@ -26,14 +27,16 @@
       <!-- Scripts -->
       <!-- Local Script -->
       <script src="Scripts/script.js" defer></script>
-      <!-- Tailwind CSS -->
-      <script src="https://cdn.tailwindcss.com"></script>
       <!-- IonIcons -->
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body class="bg-black max-w-screen-2xl h-full">
+      <!-- Scroll to top -->
+      <ion-icon id="scrollToTopBtn" name="arrow-up-circle"
+            class="bg-orange-500 text-white text-3xl p-1 md:p-2 rounded-full cursor-pointer"></ion-icon>
+
       <!-- nav starts -->
       <nav id="scrolltohome" class="flex justify-between align-middle items-center w-full px-14 py-6 h-fit">
             <img class="size-12 md:h-20 w-auto rounded-full" src="Images/avatar-anime3.png" alt="nav bar image" />
@@ -75,7 +78,8 @@
                               <a href="https://github.com/sarvinshrivastava" target="_blank" class="rounded-full">
                                     <img src="Images/Logo's/ConnectMe/github-512.png" class="size-6 " alt="github icon">
                               </a>
-                              <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" target="_blank" class="rounded-full">
+                              <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" target="_blank"
+                                    class="rounded-full">
                                     <img src="Images/Logo's/ConnectMe/linkedin-512.png"
                                           class="size-6 grayscale hover:grayscale-0" alt="linkedin icon">
                               </a>
@@ -141,7 +145,7 @@
       <!-- home ends -->
 
       <!-- intro starts -->
-      <section class="my-[5.2rem] flex flex-col w-screen items-center" id="scrolltointro">
+      <section class="mt-[5.2rem] flex flex-col w-screen items-center" id="scrolltointro">
             <h4 class="text-gray-300 w-10/12 md:w-7/12 text-center text-base">
                   I'm a B.Tech student in Computer Science and Engineering at KIET Group of Institutions Ghaziabad,
                   specializing in AR and VR technologies. With hands-on experience as an AR-VR Lead at Technocrats and
@@ -262,8 +266,8 @@
 
       <!-- achievements starts -->
       <section id="scrolltoachievements"
-            class="min-h-screen bg-inherit py-6 flex flex-col items-center justify-center sm:py-12">
-            <h2 class="text-orange-500 text-3xl font-medium py-6">My Achievements</h2>
+            class="min-h-screen bg-inherit py-12 flex flex-col items-center justify-center">
+            <h2 class="text-orange-500 text-3xl font-medium">My Achievements</h2>
 
             <div class="py-3 sm:mx-auto w-10/12 md:w-7/12 px-2 sm:px-0">
 
@@ -281,8 +285,9 @@
                                           <div class="w-full sm:w-1/2 sm:pl-8">
                                                 <div class="p-4 bg-slate-200 rounded shadow">
                                                       <h5 class="text-center text-base font-bold">August 2024</h5>
-                                                      <p class="text-center ">Became core member @MLSA-KIET as well as
-                                                            got the responsibility of Event Domain Manager</p>
+                                                      <p class="text-center ">Got selected as a core member in MLSA-KIET
+                                                            community and
+                                                            the responsibility of Event Domain Manager</p>
                                                 </div>
                                           </div>
                                     </div>
@@ -300,8 +305,9 @@
                                           <div class="w-full sm:w-1/2 sm:pr-8">
                                                 <div class="p-4 bg-slate-200 rounded shadow">
                                                       <h5 class="text-center text-base font-bold">May 2024</h5>
-                                                      <p class="text-center ">Became the lead of AR-VR Domain
-                                                            @Technocrats</p>
+                                                      <p class="text-center ">Earned the position of Lead for AR-VR
+                                                            Domain
+                                                            in Technocrats club</p>
                                                 </div>
                                           </div>
                                     </div>
@@ -319,7 +325,8 @@
                                           <div class="w-full sm:w-1/2 sm:pl-8">
                                                 <div class="p-4 bg-slate-200 rounded shadow">
                                                       <h5 class="text-center text-base font-bold">March 2024</h5>
-                                                      <p class="text-center ">Cleared till round 2 in Mahakumbh 2025</p>
+                                                      <p class="text-center ">Got the position of top 10 in Mahakumbh'25
+                                                            hackathon</p>
                                                 </div>
                                           </div>
                                     </div>
@@ -337,8 +344,9 @@
                                           <div class="w-full sm:w-1/2 sm:pr-8">
                                                 <div class="p-4 bg-slate-200 rounded shadow">
                                                       <h5 class="text-center text-base font-bold">February 2024</h5>
-                                                      <p class="text-center ">Achieved 4th position at HackMol 5.0 in
-                                                            main track as well as a special mention</p>
+                                                      <p class="text-center ">Achieved 4th position at HackMol 5.0
+                                                            hackathon in
+                                                            main track and a special mention</p>
                                                 </div>
                                           </div>
                                     </div>
@@ -356,8 +364,9 @@
                                           <div class="w-full sm:w-1/2 sm:pl-8">
                                                 <div class="p-4 bg-slate-200 rounded shadow">
                                                       <h5 class="text-center text-base font-bold">December 2023</h5>
-                                                      <p class="text-center ">Got top 2nd runnerup position in
-                                                            Pitchtember Fest & 2nd place in our track</p>
+                                                      <p class="text-center ">Got 2nd runnerup position in
+                                                            PitchtemberFest hackathon & 2nd place in Azure Design Track
+                                                      </p>
                                                 </div>
                                           </div>
                                     </div>
@@ -375,8 +384,9 @@
                                           <div class="w-full sm:w-1/2 sm:pr-8">
                                                 <div class="p-4 bg-slate-200 rounded shadow">
                                                       <h5 class="text-center text-base font-bold">December 2023</h5>
-                                                      <p class="text-center ">Became the coordinator of AR-VR Domain
-                                                            @Technocrats</p>
+                                                      <p class="text-center ">Got selected as a coordinator of AR-VR
+                                                            Domain
+                                                            in Technocrats club</p>
                                                 </div>
                                           </div>
                                     </div>
@@ -395,6 +405,7 @@
                                                 <div class="p-4 bg-slate-200 rounded shadow">
                                                       <h5 class="text-center text-base font-bold">November 2023</h5>
                                                       <p class="text-center ">Achieved 1st runnerup position in IdeateX
+                                                            ideathon
                                                       </p>
                                                 </div>
                                           </div>
@@ -413,8 +424,9 @@
                                           <div class="w-full sm:w-1/2 sm:pr-8">
                                                 <div class="p-4 bg-slate-200 rounded shadow">
                                                       <h5 class="text-center text-base font-bold">November 2023</h5>
-                                                      <p class="text-center ">Got top 10th position overall india in
-                                                            Hackout</p>
+                                                      <p class="text-center ">Achieved top 10th position overall India
+                                                            in
+                                                            Hackout'23 hackathon</p>
                                                 </div>
                                           </div>
                                     </div>
@@ -424,31 +436,26 @@
                                     </div>
                               </div>
                         </div>
-
                   </div>
-
             </div>
       </section>
       <!-- achievements ends -->
 
       <!-- projects starts -->
-      <!-- <section class="flex flex-col items-center">
-            <div>
-                  <img src="Images/Projects/home vision.jpg" alt="Home-Vison Project"
-                        class="rounded-md w-6/12 md:w-5/12 grayscale hover:grayscale-0">
-                  <div class="bg-white">
-                        <h3 class="text-white text-3xl font-semibold">Home Vision</h3>
-                        <p class="text-gray-300 text-lg">A web application that helps you to find your dream home</p>
-                        <a href="https://github.com/ShreeveshKumar/Home-Vision.git" class="rounded-full" target="_blank">
-                              <img src="Images/Logo's/ConnectMe/github-512.png" class="size-6">
-                        </a>
-                  </div>
-                  <a href="https://github.com/ShreeveshKumar/Home-Vision.git">
-                        <img src="Images/Logo's/ConnectMe/github-512.png"
-                              class="w-8">
-                  </a> 
+      <section class="flex flex-col items-center mb-10">
+            <h2 class="text-4xl text-orange-500 mb-7">Projects</h2>
+
+            <div class="flex flex-col md:flex-row">
+                  <img src="Images/Projects/home vision.jpg" id="proj1"
+                        class="rounded-md h-auto w-44 md:w-64 grayscale hover:grayscale-0 cursor-pointer">
             </div>
-      </section> -->
+
+            <div id="popup1" class="popup hidden fixed z-40 left-1/5 top-1/4 w-3/4 h-3/4 overflow-hidden bg-slate-300 opacity-55">
+                  <div class="popup-content justify-evenly absolute m-auto p-5 w-9/12 max-w-[600px] top-1/2 left-1/2 z-50">
+                        <p id="popup-description">Home-Vision Proj description</p>
+                  </div>
+            </div>
+      </section>
       <!-- projects ends -->
 
       <footer class="flex flex-col items-center mx-auto h-fit w-5/12 md:w-3/12">
@@ -464,14 +471,16 @@
                   <a href="https://github.com/sarvinshrivastava" target="_blank" class="rounded-full">
                         <img src="Images/Logo's/ConnectMe/github-512.png" class="size-6" alt="github icon">
                   </a>
-                  <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" target="_blank" class="rounded-full">
+                  <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" target="_blank"
+                        class="rounded-full">
                         <img src="Images/Logo's/ConnectMe/linkedin-512.png" class="size-6 grayscale hover:grayscale-0"
                               alt="linkedin icon">
                   </a>
                   <div class="rounded-full">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarvin5124@gmail.com" target="_blank" class="rounded-full">
-                              <img src="Images/Logo's/ConnectMe/gmail-512.png" 
-                              class="size-6 grayscale cursor-pointer hover:grayscale-0" alt="gmail icon">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarvin5124@gmail.com" target="_blank"
+                              class="rounded-full">
+                              <img src="Images/Logo's/ConnectMe/gmail-512.png"
+                                    class="size-6 grayscale cursor-pointer hover:grayscale-0" alt="gmail icon">
                         </a>
                   </div>
                   <div class="rounded-full">
