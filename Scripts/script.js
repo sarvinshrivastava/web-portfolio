@@ -1,16 +1,4 @@
-// document
-//   .getElementById("email-copy-button")
-//   .addEventListener("click", function () {
-//     const textToCopy = "sarvin5124@gmail.com";
-//     const textArea = document.createElement("textarea");
-//     textArea.value = textToCopy;
-//     document.body.appendChild(textArea);
-//     textArea.select();
-//     document.execCommand("copy");
-//     document.body.removeChild(textArea);
-//     alert("Email has been copied!");
-//   });
-
+// Phone no Copy Function
 document
   .getElementById("contact-copy-button")
   .addEventListener("click", function () {
@@ -59,26 +47,61 @@ function menu(e) {
   console.log("task done!");
 }
 
-// Project Section animation
-document.addEventListener('DOMContentLoaded', function () {
-  const hoverImages = document.querySelectorAll('.hover-image');
-  const githubLogos = document.querySelectorAll('.github-logo');
+// // Dynamic word selection for Typing Animation
+// document.addEventListener('DOMContentLoaded', function () {
+//   let counter = 3;
+//   const interval = setInterval(() => {
+//       counter--;
+//       if (counter === 0) {
+//           clearInterval(interval);
+//           window.location.href = 'index.html';
+//       }
+//   }, 1000);
+// });
 
-  hoverImages.forEach((image, index) => {
-    image.addEventListener('mouseover', () => {
-      const logo = githubLogos[index];
-      logo.style.opacity = '1'; // Set opacity to full
-      logo.classList.remove('scale-0'); // Remove the scale-0 class
-      logo.classList.add('scale-100'); // Add the scale-100 class
-    });
+// var typed = new Typed(".text",{
+//   strings:["Frontend Developer","Backend Developer","Full Stack"],
+//   typeSpeed: 100,
+//   backSpeed: 60,
+//   backDelay: 1000,
+//   loop:true
+// })
 
-    image.addEventListener('mouseout', () => {
-      const logo = githubLogos[index];
-      logo.classList.remove('scale-100'); // Remove the scale-100 class
-      logo.classList.add('scale-0'); // Add the scale-0 class
-      setTimeout(() => {
-        logo.style.opacity = '0'; // Set opacity back to 0
-      }, 300); // Match the duration of the scaling animation
-    });
+// Scroll to Top
+// Get the button
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document smoothly
+mybutton.addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   });
+});
+
+// ProjectWindowPopups
+// homevision
+let proj1 = document.getElementById("proj1");
+let popup1 = document.getElementById("popup1");
+
+proj1.addEventListener('click', function () {
+  popup1.style.display = "block";
+});
+
+// Close the popup if the user clicks anywhere outside of the popup content
+window.addEventListener('click', function (event) {
+  if (event.target == popup1) {
+    popup1.style.display = "none";
+  }
 });

@@ -6,12 +6,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Blogs-Home</title>
 
+      <!-- Styling -->
+      <link rel="stylesheet" href="/Styling/output.css">
+      <link rel="stylesheet" href="/Styling/pageproperties.css">
+
       <!-- Favicon -->
       <link rel="shortcut icon" href="/Images/favico.ico" type="image/x-icon" />
 
       <!-- Scripts -->
       <script src="Scripts/script.js" defer></script>
-      <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-black overflow-hidden h-screen max-w-screen-2xl">
@@ -24,24 +27,24 @@
             <p class="text-white text-lg">No blogs yet... Stay tuned!</p>
       </div>
 
-      <section class="flex justify-center mt-10">
-            <div class="md:w-5/12 justify-evenly flex flex-row">
-                  <a href="https://github.com/sarvinshrivastava" class="rounded-full px-2.5 md:px-0">
-                        <img src="Images/Logo's/ConnectMe/github-512.png" class="size-7" alt="github icon">
+      <section class="flex flex-row justify-evenly w-4/12 mx-auto my-5">
+            <a href="https://github.com/sarvinshrivastava" target="_blank" class="rounded-full">
+                  <img src="Images/Logo's/ConnectMe/github-512.png" class="size-6" alt="github icon">
+            </a>
+            <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/" target="_blank" class="rounded-full">
+                  <img src="Images/Logo's/ConnectMe/linkedin-512.png" class="size-6 grayscale hover:grayscale-0"
+                        alt="linkedin icon">
+            </a>
+            <div class="rounded-full">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarvin5124@gmail.com" target="_blank"
+                        class="rounded-full">
+                        <img src="Images/Logo's/ConnectMe/gmail-512.png"
+                              class="size-6 grayscale cursor-pointer hover:grayscale-0" alt="gmail icon">
                   </a>
-                  <a href="https://www.linkedin.com/in/sarvin-shrivastava-493b20176/"
-                        class="rounded-full px-2.5 md:px-0">
-                        <img src="Images/Logo's/ConnectMe/linkedin-512.png" class="size-7 grayscale hover:grayscale-0"
-                              alt="linkedin icon">
-                  </a>
-                  <div class="rounded-full px-2.5 md:px-0">
-                        <img src="Images/Logo's/ConnectMe/gmail-512.png" id="email-copy-button"
-                              class="size-7 grayscale hover:grayscale-0 cursor-pointer" alt="gmail icon">
-                  </div>
-                  <div class="rounded-full px-2.5 md:px-0">
-                        <img src="Images/Logo's/ConnectMe/contacts-512.png" alt="contacts icon"
-                              class="size-7 grayscale hover:grayscale-0 cursor-pointer" id="contact-copy-button">
-                  </div>
+            </div>
+            <div class="rounded-full">
+                  <img src="Images/Logo's/ConnectMe/contacts-512.png" alt="contacts icon"
+                        class="size-6 grayscale cursor-pointer hover:grayscale-0" id="contact-copy-button">
             </div>
       </section>
 </body>
